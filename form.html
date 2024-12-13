@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Rental Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Apartment Rental Registration Form</h1>
+    <form id="rentalForm" action="submit.php" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="apartmentType">Apartment Type:</label>
+        <select id="apartmentType" name="apartmentType" required>
+            <option value="">Select Type</option>
+            <option value="Studio">Studio</option>
+            <option value="1BHK">1 BHK</option>
+            <option value="2BHK">2 BHK</option>
+        </select>
+
+        <label for="moveInDate">Move-in Date:</label>
+        <input type="date" id="moveInDate" name="moveInDate" required>
+
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
